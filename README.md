@@ -1,5 +1,5 @@
-# vue-admin-template
-**原项目地址:** http://panjiachen.github.io/vue-admin-template
+# vue-admin-template 
+**原项目地址:** http://panjiachen.github.io/vue-admin-template  集成富文本编辑器 菜单权限
 > A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
 
 **Live demo:** http://panjiachen.github.io/vue-admin-template

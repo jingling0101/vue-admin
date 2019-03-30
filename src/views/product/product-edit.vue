@@ -65,7 +65,7 @@
 <script>
 import { getToken } from '@/utils/auth'
 import { getProduct, productEdit } from '@/api/product'
-import { uploadComImgUrl } from '@/api/url'
+import { uploadProductUrl } from '@/api/url'
 
 export default {
   data() {
@@ -77,7 +77,7 @@ export default {
         'img_fn_type': 100
       },
       // dialogVisible: false,
-      post_path: uploadComImgUrl(),
+      post_path: uploadProductUrl(),
       showImage: '',
       imageUrl: '',
       imageUp: false,

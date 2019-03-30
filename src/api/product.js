@@ -47,5 +47,3 @@ export function productDelete(params) {
     data: params
   })
 }
-
-

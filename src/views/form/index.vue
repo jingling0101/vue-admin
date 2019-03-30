@@ -36,9 +36,21 @@
           <el-radio label="Venue"/>
         </el-radio-group>
       </el-form-item>
+
+
+
       <el-form-item label="Activity form">
         <el-input v-model="form.desc" type="textarea"/>
       </el-form-item>
+
+      <div>
+        <tinymce :height="300" v-model="content"/>
+      </div>
+
+      <el-form-item label="">
+        <p></p>
+      </el-form-item>
+
       <el-form-item>
         <el-button type="primary" @click="onSubmit">Create</el-button>
         <el-button @click="onCancel">Cancel</el-button>
@@ -48,7 +60,11 @@
 </template>
 
 <script>
+import Tinymce from '@/components/Tinymce'
+
 export default {
+  name: 'TinymceDemo',
+  components: { Tinymce },
   data() {
     return {
       form: {
@@ -59,7 +75,11 @@ export default {
         delivery: false,
         type: [],
         resource: '',
-        desc: ''
+        desc: '',
+        content:
+          `<h1 style="text-align: center;">Welcome to the TinyMCE demo!</h1><p style="text-align: center; font-size: 15px;"><img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" /><ul>
+      <li>Our <a href="//www.tinymce.com/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li><li>Have a specific question? Visit the <a href="https://community.tinymce.com/forum/">Community Forum</a>.</li><li>We also offer enterprise grade support as part of <a href="https://tinymce.com/pricing">TinyMCE premium subscriptions</a>.</li>
+    </ul>`
       }
     }
   },
