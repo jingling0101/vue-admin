@@ -37,8 +37,6 @@
         </el-radio-group>
       </el-form-item>
 
-
-
       <el-form-item label="Activity form">
         <el-input v-model="form.desc" type="textarea"/>
       </el-form-item>
@@ -48,7 +46,7 @@
       </div>
 
       <el-form-item label="">
-        <p></p>
+        <p>&nbsp;</p>
       </el-form-item>
 
       <el-form-item>
