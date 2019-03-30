@@ -44,7 +44,7 @@ export default {
       uData: {
         'img_fn_type': 115
       },
-      post_path: uploadComImgUrl(),
+      post_path: uploadProductUrl(),
       dialogVisible: false,
       listObj: {},
       fileList: []
